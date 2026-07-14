@@ -40,11 +40,7 @@ marketplace-analytics-platform/
 │   ├── load_historical.py        # Единоразовая загрузка исторических данных
 │   ├── daily_update.py           # Ежедневное обновление за предыдущий день
 │   └── run.bat                   # Запуск daily_update.py с активацией venv (Windows)
-├── notebooks/
-│   └── analysis_2023.ipynb       # Jupyter‑ноутбук с ABC‑XYZ, RFM, рекомендациями
-├── metabase/
-│   └── docker-compose.yml        # Docker Compose для Metabase + PostgreSQL
-├── logs/                         # Логи выполнения (создаётся автоматически)
+│   └── product_range_matrix_and_customer_analysis.ipynb       # Jupyter‑ноутбук с ABC‑XYZ, RFM, рекомендациями
 ├── .gitignore
 ├── README.md
 ```
