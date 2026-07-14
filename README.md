@@ -58,7 +58,7 @@ RFM‑сегментацию – работа с клиентской базой
 Конкретные рекомендации по выводу товаров, стимулированию продаж и повышению маржинальности.
 ## 📊 Дашборды в Metabase
 После запуска Metabase дашборд доступен по адресу: 
-**[http://localhost:3000/dashboard/1-executive-dashboard](http://localhost:3000/dashboard/1-executive-dashboard)**
+**[http://localhost:3000/public/dashboard/9031d6f0-c8c5-405d-9f2b-9d4da038b21a](http://localhost:3000/public/dashboard/9031d6f0-c8c5-405d-9f2b-9d4da038b21a))**
 На дашборде отображаются:
 - **Динамика выручки** (последние 30 дней)
 - **Топ-10 товаров по выручке и количеству**
