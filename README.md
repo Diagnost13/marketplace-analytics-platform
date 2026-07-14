@@ -31,22 +31,23 @@
 ---
 
 ## 📁 Структура репозитория
+
+```
 marketplace-analytics-platform/
 ├── src/
-│ ├── config.py # Параметры подключения к БД
-│ ├── init_db.py # Создание таблицы transactions и индексов
-│ ├── load_historical.py # Единоразовая загрузка исторических данных
-│ ├── daily_update.py # Ежедневное обновление за предыдущий день
-│ └── run.bat # Запуск daily_update.py с активацией venv (Windows)
+│   ├── config.py                 # Параметры подключения к БД
+│   ├── init_db.py                # Создание таблицы transactions и индексов
+│   ├── load_historical.py        # Единоразовая загрузка исторических данных
+│   ├── daily_update.py           # Ежедневное обновление за предыдущий день
+│   └── run.bat                   # Запуск daily_update.py с активацией venv (Windows)
 ├── notebooks/
-│ └── analysis_2023.ipynb # Jupyter‑ноутбук с ABC‑XYZ, RFM, рекомендациями
+│   └── analysis_2023.ipynb       # Jupyter‑ноутбук с ABC‑XYZ, RFM, рекомендациями
 ├── metabase/
-│ └── docker-compose.yml # Docker Compose для Metabase + PostgreSQL
-├── logs/ # Логи выполнения (создаётся автоматически)
+│   └── docker-compose.yml        # Docker Compose для Metabase + PostgreSQL
+├── logs/                         # Логи выполнения (создаётся автоматически)
 ├── .gitignore
 ├── README.md
-└── LICENSE
-
+```
 ---
 ## 📓 Аналитика в Jupyter Notebook
 Откройте notebooks/analysis_2023.ipynb и выполните ячейки.
