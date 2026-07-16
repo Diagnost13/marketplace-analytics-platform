@@ -34,15 +34,19 @@
 
 ```
 marketplace-analytics-platform/
-├── src/
-│   ├── config.py                 # Параметры подключения к БД
-│   ├── init_db.py                # Создание таблицы transactions и индексов
-│   ├── load_historical.py        # Единоразовая загрузка исторических данных
-│   ├── daily_update.py           # Ежедневное обновление за предыдущий день
-│   └── run.bat                   # Запуск daily_update.py с активацией venv (Windows)
-│   └── product_range_matrix_and_customer_analysis.ipynb       # Jupyter‑ноутбук с ABC‑XYZ, RFM, рекомендациями
-├── .gitignore
-├── README.md
+├── .gitignore # Игнорируемые файлы (venv, логи, конфиги)
+├── README.md # Описание проекта
+├── LICENSE # Лицензия MIT
+├── config.py # Параметры подключения к БД
+├── init_db.py # Создание таблицы transactions и индексов
+├── load_historical.py # Единоразовая загрузка исторических данных
+├── daily_update.py # Ежедневное обновление за предыдущий день
+├── run.bat # Запуск daily_update.py с активацией venv (Windows)
+├── analysis_2023.ipynb # Jupyter‑ноутбук с ABC‑XYZ, RFM, рекомендациями
+├── docker-compose.yml # Docker Compose для Metabase + PostgreSQL
+├── update.log # Логи ежедневных загрузок
+├── export_2026-07-13.csv # Пример выгрузки данных (опционально)
+└── Metabase - Основные метрики.pdf # PDF-экспорт дашборда Metabase
 ```
 ---
 ## 📓 Аналитика в Jupyter Notebook
