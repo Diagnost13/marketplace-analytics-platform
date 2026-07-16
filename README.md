@@ -34,7 +34,7 @@
 
 ```
 marketplace-analytics-platform/
-├── .gitignore # Игнорируемые файлы (venv, логи, конфиги)
+├── .gitignore # Игнорируемые файлы (venv, временные логи)
 ├── README.md # Описание проекта
 ├── LICENSE # Лицензия MIT
 ├── config.py # Параметры подключения к БД
@@ -44,7 +44,8 @@ marketplace-analytics-platform/
 ├── run.bat # Запуск daily_update.py с активацией venv (Windows)
 ├── analysis_2023.ipynb # Jupyter‑ноутбук с ABC‑XYZ, RFM, рекомендациями
 ├── docker-compose.yml # Docker Compose для Metabase + PostgreSQL
-├── update.log # Логи ежедневных загрузок
+├── logs/ # Папка с логами ежедневных загрузок
+│ └── update.log # Логи выполнения update.py
 ├── export_2026-07-13.csv # Пример выгрузки данных (опционально)
 └── Metabase - Основные метрики.pdf # PDF-экспорт дашборда Metabase
 ```
@@ -70,10 +71,10 @@ RFM‑сегментацию – работа с клиентской базой
 
 ## 📋 Логирование
 
-Логи ежедневных обновлений сохраняются в файл  
-`logs/update.log`
+Логи ежедневных обновлений сохраняются в файл [`logs/update.log`](./logs/update.log).
+
 Пример содержимого:
-```update.log`
+```log
 2026-07-16 10:00:03,482 - INFO - Запуск обновления за 2026-07-15
 2026-07-16 10:00:05,517 - INFO - Для 2026-07-15 загружено 3126 записей
 2026-07-16 10:00:05,517 - INFO - Обновление завершено успешно
